@@ -14,15 +14,6 @@ A Flutter cryptocurrency market dashboard featuring CoinGecko API integration, i
 
 ---
 
-## Preview
-
-<!-- Add screenshots here -->
-| Market Overview (Explore) | Trending Sparklines | Candlestick OHLC Detail |
-| :---: | :---: | :---: |
-| *Screenshot placeholder* | *Screenshot placeholder* | *Screenshot placeholder* |
-
----
-
 ## Features
 
 - **Cryptocurrency Market Overview**: Live snapshot of top cryptocurrencies by market capitalization.
@@ -124,7 +115,7 @@ lib/
 ### Running Locally
 ```bash
 # 1. Clone the repository
-git clone <REPOSITORY_URL>
+git clone https://github.com/Ahmadali-dev375/Trading-Market-Dashboard.git
 cd crypto_dashboard
 
 # 2. Install dependencies
@@ -148,14 +139,6 @@ An active internet connection is mandatory to retrieve market quotes, sparklines
 - **No WebSocket Streaming**: Prices are requested on demand over HTTP REST; real-time push tick streaming is not implemented.
 - **Placeholder Screens**: Top Up and Profile screens are illustrative demo placeholders.
 - **No Order Execution**: The app does not connect to exchanges, order books, or brokerages.
-
----
-
-## Download APK
-
-<!-- GitHub Release link will be added after publishing v1.0.0 -->
-Pre-built release APKs will be available under GitHub Releases once published:
-- `CryptoDashboard-v1.0.0.apk`
 
 ---
 
