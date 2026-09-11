@@ -13,6 +13,15 @@ A Flutter cryptocurrency market dashboard featuring CoinGecko API integration, i
 > - **No Financial Services**: This application does NOT execute real trades, manage real money, connect to brokerage services, provide real wallet storage, or offer financial and investment advice.
 
 ---
+---
+
+## 🎨 UI/UX Design — Figma
+
+The UI concept and design reference for **Crypto Dashboard** is available in Figma and was used as inspiration for the Flutter implementation.
+
+👉 [**Open Crypto Dashboard Figma Design**](https://www.figma.com/design/kCIjMbFkgZ7nVaK3559cKX/Stock-Trading-App---UI-Concept--Community-?node-id=1-129&p=f&t=V66IYeSyr9bb1N9G-0)
+
+---
 
 ## Features
 
