@@ -16,7 +16,7 @@ A Flutter cryptocurrency market dashboard featuring CoinGecko API integration, i
 
 ## 🎨 UI/UX Design — Figma
 
-The UI concept and design reference for **Crypto Dashboard** is available in Figma and was used as inspiration for the Flutter implementation.
+The UI concept and design reference for **Crypto Dashboard** is available in Figma and were used as inspiration for the Flutter implementation.
 
 👉 [**Open Crypto Dashboard Figma Design**](https://www.figma.com/design/kCIjMbFkgZ7nVaK3559cKX/Stock-Trading-App---UI-Concept--Community-?node-id=1-129&p=f&t=V66IYeSyr9bb1N9G-0)
 
@@ -24,27 +24,13 @@ The UI concept and design reference for **Crypto Dashboard** is available in Fig
 
 ## Features
 
-- **Cryptocurrency Market Overview**: Live snapshot of top cryptocurrencies by market capitalization.
-- **CoinGecko REST API Integration**: Clean HTTP client implementation consuming free-tier CoinGecko endpoints.
-- **Interactive Candlestick (OHLC) Charts**: High-performance candlestick rendering powered by Syncfusion Flutter Charts.
-- **7-Day Sparkline Trends**: Compact inline price momentum visualization using `chart_sparkline`.
-- **Multi-Timeframe Exploration**: Seamless switching across intervals (`1D`, `1W`, `1M`, `3M`, `6M`, `1Y`) for historical analysis.
-- **Interactive Gestures**: Pinch-to-zoom, horizontal chart panning, and tap-activated trackball tooltips.
-- **API Rate-Limit Handling**: Client-side throttling and intuitive UI fallback indicators for free-tier CoinGecko request quotas.
-- **Dark-Themed Interface**: Ergonomic, modern dark palette designed for data readability.
-
----
-
-## Charts & Data Visualization
-
-- **Syncfusion Cartesian Charts (`SfCartesianChart`)**:
-  - `CandleSeries` mapping historical open, high, low, and close (OHLC) data.
-  - `DateTimeAxis` horizontal time scaling based on CoinGecko Unix epoch timestamps.
-  - Interactive `TrackballBehavior` displaying exact price metrics on touch interaction.
-  - `ZoomPanBehavior` for horizontal chart scaling and inspection.
-- **Mini Sparklines (`chart_sparkline`)**:
-  - Micro-visualizations displaying 7-day trailing price trajectories directly in list items.
-  - Conditional gradient fills based on positive or negative 24-hour price momentum.
+- **Cryptocurrency Market Overview**
+- **CoinGecko REST API Integration**
+- **Interactive Candlestick (OHLC) Charts**
+- **7-Day Sparkline Trends**
+- **Interactive Gestures**
+- **API Rate-Limit Handling**
+- **Dark-Themed Interface**
 
 ---
 
@@ -74,16 +60,6 @@ To maintain technical and financial integrity, this project strictly distinguish
   - `chart_sparkline` (`^1.0.15+1`)
 - **Navigation**: `global_bottom_navigation_bar` (`^0.0.8`)
 - **Icons**: `cupertino_icons` (`^1.0.6`)
-
----
-
-## Architecture
-
-This project is structured as a focused, lightweight Flutter application emphasizing clarity and simplicity:
-- **State Management**: Reactive state handled via Flutter's native `setState` within stateful components.
-- **API Communication**: Centralized HTTP service layer (`CoinGeckoService`) abstracting JSON deserialization and rate limiting.
-- **Model Serialization**: Strongly-typed data models (`CoinModel`, `SparklineIn7D`, `ChartModel`) with null-safe JSON factory constructors.
-- **Component Modularization**: Reusable UI components (`Item`, `Bit`) separating list item rendering from screen containers.
 
 ---
 
@@ -135,35 +111,28 @@ flutter run
 
 ---
 
-## Internet Requirement
-
-An active internet connection is mandatory to retrieve market quotes, sparklines, and candlestick data from the public CoinGecko API. If requests exceed CoinGecko's free-tier rate limits, the app presents a clean rate-limit notice with pull-to-refresh capabilities.
-
----
-
 ## Known Limitations
 
-- **Rate Limits**: The public free CoinGecko API restricts calls per minute. Repeated rapid refreshes may return HTTP 429 until the cooldown expires.
+- **Rate Limits**: The public free CoinGecko API restricts calls per minute.
+- **Placeholder Screens**
 - **No WebSocket Streaming**: Prices are requested on demand over HTTP REST; real-time push tick streaming is not implemented.
-- **Placeholder Screens**: Top Up and Profile screens are illustrative demo placeholders.
-- **No Order Execution**: The app does not connect to exchanges, order books, or brokerages.
+- **No Order Execution**
 
 ---
 
 ## Disclaimer
 
-This application is a Flutter portfolio demonstration. Cryptocurrency price and OHLC data is fetched from the public CoinGecko API. Any simulated quantities or demo values do not represent real holdings, real profits, or real market positions. This app does not execute trades, manage real money, connect to a brokerage, or provide financial or investment advice.
+This application is a Flutter portfolio demonstration. Cryptocurrency price and OHLC data are fetched from the public CoinGecko API.
 
 ---
 
 ## Acknowledgements
 
 - **Market Data**: [CoinGecko API](https://www.coingecko.com/en/api)
-- **Charts**: [Syncfusion Flutter Charts](https://pub.dev/packages/syncfusion_flutter_charts) (*used under Syncfusion Community License / evaluation terms*)
-- **Sparklines**: [chart_sparkline](https://pub.dev/packages/chart_sparkline)
+- **Charts**: [Syncfusion Flutter Charts](https://pub.dev/packages/syncfusion_flutter_charts)
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Ahmad Ali**
